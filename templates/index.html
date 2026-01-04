@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>Student Management System</h2>
+    <p>Python Flask Interview Project</p>
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard">
+
+    <!-- Form Card -->
+    <div class="card">
+        <h3>Student Form</h3>
+
+        <input id="sid" placeholder="Student ID">
+        <input id="name" placeholder="Name">
+        <input id="age" placeholder="Age">
+        <input id="course" placeholder="Course">
+
+        <button class="btn primary" onclick="addStudent()">Add</button>
+        <button class="btn warning" onclick="updateStudent()">Update</button>
+    </div>
+
+    <!-- Display Card -->
+    <div class="card wide">
+        <h3>Students</h3>
+
+        <div class="actions">
+            <button class="btn success" onclick="viewStudents()">View All</button>
+            <button class="btn info" onclick="searchStudent()">Search</button>
+            <button class="btn danger" onclick="deleteStudent()">Delete</button>
+        </div>
+
+        <div id="output" class="cards"></div>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
